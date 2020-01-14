@@ -1,0 +1,82 @@
+// Tacara Solomon - Week 6: LESS Stylesheet
+
+// LESS Color Variables
+@bgColor: #ebf5ee;
+@mainColor: #78a1bb;
+@secondColor: #2c3857;
+
+// LESS Mixin
+.bold-header {
+    font-weight: 700;
+}
+
+// Basic Styling
+
+html {
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", Helvetica, Arial, "sans-serif" ;
+    color:  @secondColor;
+    background: @bgColor;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+// LESS Mixin used with nesting
+header {
+    h1{
+        .bold-header;
+    }
+    margin: 20px 50px;
+    padding-bottom: 30px;
+    color: @secondColor;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+// LESS Nesting 
+nav {
+    margin-bottom: 20px;
+    a {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: @mainColor;     
+   } 
+}
+
+.container {
+    margin: 20px 50px;
+    padding: 20px 20px;
+}
+
+footer {
+    background: @secondColor;
+    color: @bgColor;
+    margin-top: 20px;
+    text-align: center;
+    a {
+        color: @mainColor;
+        text-decoration: none;
+    }
+}
+
+// Resources page
+.resources {
+    text-decoration: none;
+    color: @mainColor;
+ 
+}
+
+/*For screens smaller than 600px, navigation will stack  */
+@media screen and (max-width: 600px) {
+    nav a {
+      float: none;
+      width: 100%;
+    }
+  }

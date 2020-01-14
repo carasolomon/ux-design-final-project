@@ -1,0 +1,59 @@
+.bold-header {
+  font-weight: 700;
+}
+html {
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", Helvetica, Arial, "sans-serif";
+  color: #2c3857;
+  background: #ebf5ee;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+header {
+  margin: 20px 50px;
+  padding-bottom: 30px;
+  color: #2c3857;
+}
+header h1 {
+  font-weight: 700;
+}
+.row {
+  margin-top: 20px;
+}
+nav {
+  margin-bottom: 20px;
+}
+nav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #78a1bb;
+}
+.container {
+  margin: 20px 50px;
+  padding: 20px 20px;
+}
+footer {
+  background: #2c3857;
+  color: #ebf5ee;
+  margin-top: 20px;
+  text-align: center;
+}
+footer a {
+  color: #78a1bb;
+  text-decoration: none;
+}
+.resources {
+  text-decoration: none;
+  color: #78a1bb;
+}
+/*For screens smaller than 600px, navigation will stack  */
+@media screen and (max-width: 600px) {
+  nav a {
+    float: none;
+    width: 100%;
+  }
+}
